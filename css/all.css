@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+/*整體文字設定*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+/*banner設定開始*/
+.banner{
+	background-image: url(../images/banner.png);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top:356px;
+	padding-bottom: 268px;
+	font-weight: bold;
+}
+
+/*整體容器設定*/
+.container{
+    width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*banner設定開始*/
+.bn-title h1{
+	text-align: left;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 42px;
+	padding-bottom: 32px;
+}
+.bn-title span{
+	font-size: 80px;
+	font-weight: black;
+	line-height: 94px;
+}
+.bn-title h2{
+	text-align: left;
+	font-size: 24px;
+	line-height: 36px;
+	color: #ffffff;
+	padding-bottom: 48px;
+}
+.bn-social{
+	display: flex;
+}
+.bn-social img{
+	padding-right: 16px;
+}
+.banner .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*banner設定結束*/
+
+
+/*about設定開始*/
+.about {
+	padding-bottom: 56px;
+}
+.about .title{
+	padding-bottom: 40px;
+}
+.about img{
+	padding-bottom: 24px;
+}
+.ab-edu{
+	width: 384px;
+	border-bottom: 1px solid #000;
+	padding-bottom:24px ;
+	margin:0 auto;
+}
+.ab-edu li{
+	font-size:24px;
+	font-weight: bold;
+	line-height: 42px;
+}
+.ab-work{
+	padding-top: 31px;
+}
+.ab-work li{
+	font-size:24px;
+	font-weight: bold;
+	line-height: 42px;
+	padding-bottom: 24px;
+}
+.ab-work li:before{
+	content: "●";
+	color:#891818;
+	font-style: normal;
+	padding-right: 16px;
+}
+/*about設定結束*/
+
+/*brand設定開始*/
+.brand .container{
+	display: flex;
+	flex-direction: column;
+	align-items:center
+}
+.brand{
+	background-color:#000000 ;
+	border:1px #707070 solid;
+}
+.brand .title{
+	color: #ffffff;
+	padding-bottom: 16px;
+}
+.brand .content{
+	font-style: normal;
+	color: #ffffff;
+	padding-bottom: 68px;
+}
+.brand .content span{
+	font-size: 24px;
+	font-style: italic;
+	padding-bottom: 32px;
+}
+.bd-img{
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+	align-items:center;
+	padding-bottom: 120px;
+}
+.bd-img .bd-img2{
+	padding-right:24px ;
+}
+.bd-img img{
+	margin-bottom: 40px;
+}
+/*brand設定結束*/
+
+/*works設定開始*/
+.works .title{
+	padding-bottom:24px;
+}
+.works .content span{
+	font-style: italic;
+}
+.works .works-img{
+	width: 1200px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 56px;
+}
+.works-img li{
+	padding-bottom:56px ;
+}
+.works-img p{
+	font-size:20px;
+	font-style: normal;
+	font-weight: medium;
+	line-height: 42px;
+}
+/*works設定結束*/
+
+/*段落介紹文字統一設定*/
+.content{
+	font-size: 20px;
+	line-height: 30px;
+	font-style: normal;
+}
+
+/*footer設定開始*/
+.footer{
+	background-color: #000000;
+	padding-bottom:80px;
+}
+.footer .title{
+	color: #ffffff;
+	padding-bottom:16px
+}
+.footer a{
+	display: flex;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 24px;
+	font-style: italic;
+	line-height: 36px;
+	text-decoration: none;
+}
+/*footer設定結束*/
+
+
+
+/*全段落h3統一設定*/
+.title{
+	font-size: 64px;
+	line-height: 75px;
+	padding-top: 64px;
+	font-weight: medium;
+}
+
+/*about的內文統一設定*/
+.ab-list{
+	font-size: 24px;
+	line-height: 42px;
+	font-weight: bold;
+}
